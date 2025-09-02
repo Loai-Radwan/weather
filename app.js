@@ -15,14 +15,14 @@ button.onclick = () => {
     }
     else{
         console.log(input.value.toLowerCase())
-        fetchWeather(`http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=5e17c91851e88379060dabbfb07089dc&units=metric`)
+        fetchWeather(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=5e17c91851e88379060dabbfb07089dc&units=metric`)
     }
 }
 
 function success(position) {
     console.log(`done ${position.coords.latitude}`)
     console.log(`done ${position.coords.longitude}`)
-    fetchWeather(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=5e17c91851e88379060dabbfb07089dc&units=metric`)
+    fetchWeather(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=5e17c91851e88379060dabbfb07089dc&units=metric`)
 }
 
 function error(err) {
