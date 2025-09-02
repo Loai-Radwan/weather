@@ -39,6 +39,7 @@ function fetchWeather(url){
         weather.innerHTML = `<p>${data.message}</p>`
         }
         else{
+            weather.innerHTML = ''
             let cityName = document.createElement('h2')
             let temp = document.createElement('p')
             let cond = document.createElement('p')
