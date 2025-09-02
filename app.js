@@ -47,7 +47,7 @@ function fetchWeather(url){
     
             cityName.textContent = data.name
             temp.innerHTML = `Temperature : <span>${ Math.floor(data.main.temp)}</span>°C`
-            cond.textContent = `Condition : <span>${ Math.floor(data.weather[0].main)}</span>`
+            cond.textContent = `Condition : <span>${data.weather[0].main}</span>`
     
             weather.appendChild(cityName)
             weather.appendChild(temp)
